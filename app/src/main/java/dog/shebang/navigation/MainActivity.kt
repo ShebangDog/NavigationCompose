@@ -49,9 +49,9 @@ fun NavigationPreview() {
         }
     }) {
 
-        NavHost(navController = navController, startDestination = "home") {
-            composable("home") { HomeScreen() }
-            composable("list") { ListScreen() }
+        NavHost(navController = navController, startDestination = Screen.Home.route) {
+            composable(Screen.Home.route) { HomeScreen() }
+            composable(Screen.List.route) { ListScreen() }
         }
     }
 }
